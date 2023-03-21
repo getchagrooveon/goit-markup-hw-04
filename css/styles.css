@@ -389,9 +389,10 @@ logo-text-second-section {
 }
 
 .what-we-are-doing {
-  margin-bottom: 120px;
+  padding-bottom: 120px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 120px;
 }
 
 .what-are-we-doing-item {
@@ -452,7 +453,6 @@ logo-text-second-section {
   line-height: 1.1;
   text-align: center;
   margin-bottom: 72px;
-  padding-top: 120px;
 }
 
 .team-header-text {
@@ -518,10 +518,21 @@ logo-text-second-section {
   padding-bottom: 32px;
 }
 .gallery-info {
+  color: var(--dark-main-color);
   border-color: var(--accent-color);
   border-style: solid;
   border-width: 1px;
   border-top: none;
+}
+
+.gallery-container-link:hover .gallery-info,
+.gallery-container-link:focus .gallery-info {
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+  border-right: 1px solid var(--light-main-color);
+  border-bottom: 1px solid var(--light-main-color);
+  border-left: 1px solid var(--light-main-color);
 }
 
 .customers-header-text {
@@ -544,33 +555,33 @@ logo-text-second-section {
   margin: 0 auto;
 }
 
-.customers-logo {
+.customer-link {
   display: block;
-  border: 1px solid var(--subtle-text-color);
   fill: var(--subtle-text-color);
 }
 
-.customer-item {
-  display: flex;
+.customer-link {
   width: 168px;
   height: 88px;
   border: 1px solid var(--subtle-text-color);
   border-radius: 4px;
-  fill: var(--subtle-text-color);
+  display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.customer-item:hover,
-.customer-item:focus {
-  fill: var(--pressed-state-color);
-  border-color: var(--pressed-state-color);
+.customer-link:hover,
+.customer-link:focus {
+  border: 1px solid var(--pressed-state-color);
 }
 
-.customer-item > a:hover,
-.customer-item > a:focus {
+.customer-link:hover .customer-icon,
+.customer-link:focus .customer-icon {
   fill: var(--pressed-state-color);
-  border-color: var(--pressed-state-color);
+}
+
+.customer-icon {
+  fill: var(--subtle-text-color);
 }
 
 .footer-social-media {
@@ -638,7 +649,7 @@ logo-text-second-section {
 }
 
 .logo.footer {
-  color: var(#f4f4fd);
+  color: var(--light-main-color);
 }
 
 .footer-links-primary {
@@ -655,14 +666,14 @@ logo-text-second-section {
 }
 
 .footer-primary {
-  color: var(#f4f4fd);
+  color: var(--light-main-color);
   background-color: var(#2e2f42);
   padding-top: 101.5px;
   padding-bottom: 100px;
 }
 
 .footer-link-icon {
-  fill: var(#f4f4fd);
+  fill: var(--light-main-color);
 }
 
 .footer-link:hover,
@@ -681,7 +692,7 @@ footer-link {
 }
 
 .footer-link-icon {
-  fill: var(#f4f4fd);
+  fill: var(--light-main-color);
 }
 
 .footer-links-item {
